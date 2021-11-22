@@ -8,22 +8,16 @@ namespace Learning
     {
         static void Main(string[] args)
         {
-            var post = new Post();
-            post.Title = "I get an error when i add this line";
-            post.Description = "Lorem ipsum dolor sit amet, " +
-                "consectetur adipiscing elit. Etiam erat massa, " +
-                "dictum non nulla ut, faucibus vulputate nisl." +
-                " Vivamus tempor augue orci, at bibendum metus elementum ac.";
+            var stack = new Stack();
 
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
 
-            post.UpVote();
-
-            post.DownVote();
-            post.DownVote();
-            post.DownVote();
-            post.DownVote();
-
-            Console.WriteLine(post.Vote);
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
 
         }
 
