@@ -8,17 +8,13 @@ namespace Learning
     {
         static void Main(string[] args)
         {
-            var stack = new Stack();
+            var sql = new SqlConnection("SQL string");
+            var oracle = new OracleConnection("ORACLE string");
 
-            stack.Push(1);
-            stack.Push(2);
-            stack.Push(3);
-
-            Console.WriteLine(stack.Pop());
-            Console.WriteLine(stack.Pop());
-            Console.WriteLine(stack.Pop());
-            Console.WriteLine(stack.Pop());
-
+            sql.OpenConnection();
+            oracle.OpenConnection();
+            sql.CloseConnection();
+            oracle.CloseConnection();
         }
 
         
