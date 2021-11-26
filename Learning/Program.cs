@@ -8,13 +8,8 @@ namespace Learning
     {
         static void Main(string[] args)
         {
-            var sql = new SqlConnection("SQL string");
-            var oracle = new OracleConnection("ORACLE string");
-
-            sql.OpenConnection();
-            oracle.OpenConnection();
-            sql.CloseConnection();
-            oracle.CloseConnection();
+            var command = new DbCommand(new OracleConnection("sql string"), "INSERT INTO table...");
+            command.Execute();
         }
 
         

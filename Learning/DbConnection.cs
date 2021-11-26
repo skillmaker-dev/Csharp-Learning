@@ -12,7 +12,7 @@ namespace Learning
         public DbConnection(String connectionString)
         {
             if (String.IsNullOrWhiteSpace(connectionString))
-                throw new NullReferenceException("Connection string is null");
+                throw new ArgumentNullException("Connection string is null");
             
             ConnectionString = connectionString;
         }
