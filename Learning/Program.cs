@@ -2,7 +2,7 @@
 using System.IO;
 using System.Collections.Generic;
 
-namespace Learning
+namespace Learning_Basics
 {
     class Program
     {

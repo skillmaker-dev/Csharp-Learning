@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Learning
+namespace Learning_Basics
 {
     class UploadVideo : IActivity
     {

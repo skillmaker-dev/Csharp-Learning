@@ -1,4 +1,4 @@
-﻿namespace Learning
+﻿namespace Learning_Basics
 {
     public interface IActivity
     {
