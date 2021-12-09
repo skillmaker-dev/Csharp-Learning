@@ -56,6 +56,7 @@ namespace LINQ
             var maxCar = cars.Single(n => n.Price == cars.Max(b => b.Price));
             Console.WriteLine("The most expensive car is: " + maxCar.Name);
 
+
         }
     }
 }
